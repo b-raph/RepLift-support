@@ -1,0 +1,69 @@
+/* Palette reprise de l'application : corail #FE6B3B, encre #1A1E23. */
+:root {
+  --accent: #D9480F;          /* corail assombri : 4,6:1 sur le fond clair */
+  --accent-vif: #FE6B3B;
+  --encre: #1A1E23;
+  --texte: #2B2F36;
+  --discret: #6B6B72;
+  --fond: #FFF7F3;
+  --carte: #FFFFFF;
+  --bordure: #F0DED6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #FF8A5F;
+    --accent-vif: #FE6B3B;
+    --encre: #F5F5F7;
+    --texte: #D8D8DE;
+    --discret: #9A9AA2;
+    --fond: #0B0B0D;
+    --carte: #16161A;
+    --bordure: #27272E;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 16px 64px;
+  background: var(--fond);
+  color: var(--texte);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.page { max-width: 44rem; margin: 0 auto; }
+header { padding: 48px 0 8px; }
+.marque {
+  font-size: 2rem; font-weight: 800; letter-spacing: -0.02em;
+  color: var(--encre); margin: 0;
+}
+.marque span { color: var(--accent-vif); }
+.bandeau { color: var(--discret); margin: 4px 0 0; }
+nav { margin: 24px 0 8px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+h2 {
+  color: var(--encre); font-size: 1.35rem; letter-spacing: -0.01em;
+  margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--bordure);
+}
+h3 { color: var(--encre); font-size: 1.05rem; margin: 28px 0 4px; }
+section > h2:first-child { border-top: none; padding-top: 0; }
+.carte {
+  background: var(--carte); border: 1px solid var(--bordure);
+  border-radius: 14px; padding: 4px 20px 20px; margin: 20px 0;
+}
+a { color: var(--accent); }
+ul { padding-left: 1.2em; }
+li { margin: 6px 0; }
+.langue {
+  display: inline-block; margin: 32px 0 0; padding: 8px 14px;
+  border: 1px solid var(--bordure); border-radius: 999px;
+  background: var(--carte); text-decoration: none; font-weight: 600;
+}
+footer {
+  margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--bordure);
+  color: var(--discret); font-size: 0.9rem;
+}
+code {
+  background: var(--carte); border: 1px solid var(--bordure);
+  border-radius: 6px; padding: 1px 6px; font-size: 0.9em;
+}
