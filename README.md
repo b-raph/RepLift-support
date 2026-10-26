@@ -9,12 +9,13 @@ dépendance ni outil de construction. Français puis anglais sur chaque page.
 | `assistance.html` | **URL d'assistance** — obligatoire dans App Store Connect |
 | `confidentialite.html` | **URL de politique de confidentialité** — obligatoire |
 
-## Avant de publier
+## Adresse de contact
 
-Remplacer `CONTACT@EXEMPLE.COM` par une vraie adresse, dans les trois fichiers :
+`rbm.entreprises@gmail.com`, dans `assistance.html` et `confidentialite.html`.
+Pour en changer :
 
 ```bash
-grep -rl CONTACT@EXEMPLE.COM . | xargs sed -i '' 's/CONTACT@EXEMPLE.COM/ton@adresse.fr/g'
+grep -rl rbm.entreprises@gmail.com . | xargs sed -i '' 's/rbm.entreprises@gmail.com/nouvelle@adresse.fr/g'
 ```
 
 ## Mise en ligne
