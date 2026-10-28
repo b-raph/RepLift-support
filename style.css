@@ -63,6 +63,16 @@ footer {
   margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--bordure);
   color: var(--discret); font-size: 0.9rem;
 }
+/* Étiquette de plateforme, pour les sections qui ne valent que d'un côté. */
+.plateforme {
+  display: inline-block; margin-left: 8px; padding: 1px 9px;
+  border: 1px solid var(--bordure); border-radius: 999px;
+  background: var(--carte); color: var(--discret);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em;
+  text-transform: uppercase; vertical-align: 0.2em; white-space: nowrap;
+}
+h3 .plateforme { vertical-align: 0.15em; }
+
 code {
   background: var(--carte); border: 1px solid var(--bordure);
   border-radius: 6px; padding: 1px 6px; font-size: 0.9em;

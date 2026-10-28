@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assistance — RepLift</title>
-<meta name="description" content="Aide et contact pour RepLift : Apple Watch, fréquence cardiaque, sauvegardes.">
+<meta name="description" content="Aide et contact pour RepLift sur iPhone, Apple Watch et Android : rappels, fréquence cardiaque, sauvegardes.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,13 +25,32 @@
   <p>
     Une question, un défaut, une idée : écris à
     <a href="mailto:rbm.entreprises@gmail.com">rbm.entreprises@gmail.com</a>.
-    Précise ton modèle d'iPhone, la version d'iOS et, si ça concerne la montre,
-    son modèle — ça fait gagner un aller-retour.
+    Précise ton téléphone et sa version — modèle d'iPhone et version d'iOS, ou
+    modèle d'Android et version d'Android — et, si ça concerne la montre, son
+    modèle. Ça fait gagner un aller-retour.
   </p>
 
   <h2>Questions fréquentes</h2>
 
-  <h3>Je ne vois pas ma fréquence cardiaque</h3>
+  <h3>Qu'est-ce qui change entre iPhone et Android ?</h3>
+  <p>
+    L'essentiel est commun : les mêmes 120 exercices illustrés, le même moteur
+    de progression, les mêmes exports. Deux différences, et elles sont nettes.
+  </p>
+  <ul>
+    <li>
+      <strong>La montre n'existe que sur iPhone.</strong> La version Android
+      n'a pas d'application pour montre, donc pas de fréquence cardiaque et
+      pas de séance au poignet.
+    </li>
+    <li>
+      <strong>Le catalogue de programmes diffère.</strong> Android en livre
+      dix-neuf, iPhone douze. Les exercices, eux, sont exactement les mêmes des
+      deux côtés.
+    </li>
+  </ul>
+
+  <h3>Je ne vois pas ma fréquence cardiaque<span class="plateforme">iPhone + Apple Watch</span></h3>
   <p>
     La mesure ne démarre que si tu l'as activée <strong>dans l'application sur
     la montre</strong> : ouvre RepLift au poignet, va dans les réglages et
@@ -44,7 +63,7 @@
     séance mesurée suffit pour que le bloc apparaisse dans l'onglet Progression.
   </p>
 
-  <h3>La séance n'arrive pas sur la montre</h3>
+  <h3>La séance n'arrive pas sur la montre<span class="plateforme">iPhone + Apple Watch</span></h3>
   <p>
     Les deux appareils doivent être appairés et à portée. Ouvre RepLift sur
     l'iPhone une fois : la séance du jour part à ce moment-là. Si tu modifies
@@ -53,11 +72,37 @@
     ne pas changer ce que tu es en train d'enregistrer.
   </p>
 
+  <h3>Je ne reçois pas les rappels<span class="plateforme">Android</span></h3>
+  <p>
+    Deux réglages du système peuvent les retenir, et l'application ne peut pas
+    passer outre ni l'un ni l'autre.
+  </p>
+  <ul>
+    <li>
+      <strong>L'autorisation de notification</strong>, demandée depuis
+      Android&nbsp;13. Si tu l'as refusée, va dans Paramètres → Applications →
+      RepLift → Notifications pour l'accorder. RepLift te le dit dans ses
+      réglages quand c'est le cas.
+    </li>
+    <li>
+      <strong>L'optimisation de la batterie.</strong> Le rappel du matin est
+      une tâche planifiée ; certains fabricants la repoussent, parfois de
+      plusieurs heures, tant que l'application est « optimisée ». Le même écran
+      Paramètres → Applications → RepLift permet de la mettre en « Sans
+      restriction ».
+    </li>
+  </ul>
+
   <h3>Comment récupérer mes données ?</h3>
   <p>
     Réglages, puis Données : tu exportes tout en JSON, et ton historique de
     séries en CSV. Le JSON se réimporte dans RepLift ; le CSV s'ouvre dans
     n'importe quel tableur. Rien n'est verrouillé.
+  </p>
+  <p>
+    Les deux versions écrivent leur propre JSON et le relisent. En revanche les
+    colonnes du CSV ne sont pas identiques d'une plateforme à l'autre : si tu
+    as un tableur ou un script qui lit ces fichiers, garde la même plateforme.
   </p>
 
   <h3>Est-ce que je dois créer un compte ?</h3>
@@ -69,8 +114,15 @@
 
   <h3>Kilos ou livres ?</h3>
   <p>
-    Les deux. Le choix est dans les réglages et s'applique partout, iPhone et
-    montre.
+    Les deux. Le choix est dans les réglages et s'applique partout — et sur
+    iPhone, à la montre aussi.
+  </p>
+
+  <h3>En quelle langue ?</h3>
+  <p>
+    Français et anglais. L'application suit la langue de ton téléphone. Les
+    fiches d'exercices — consignes et erreurs fréquentes — sont pour l'instant
+    rédigées en français dans la version Android.
   </p>
 </section>
 
@@ -81,13 +133,30 @@
   <p>
     Questions, bugs, ideas: write to
     <a href="mailto:rbm.entreprises@gmail.com">rbm.entreprises@gmail.com</a>.
-    Mention your iPhone model, your iOS version, and your watch model if the
-    issue involves it.
+    Mention your phone and its version — iPhone model and iOS version, or
+    Android model and Android version — and your watch model if the issue
+    involves it.
   </p>
 
   <h2>Frequently asked</h2>
 
-  <h3>I can't see my heart rate</h3>
+  <h3>What differs between iPhone and Android?</h3>
+  <p>
+    Most of it is shared: the same 120 illustrated exercises, the same
+    progression engine, the same exports. Two differences, both clear-cut.
+  </p>
+  <ul>
+    <li>
+      <strong>The watch is iPhone-only.</strong> The Android version has no
+      watch app, so no heart rate and no logging from your wrist.
+    </li>
+    <li>
+      <strong>The programme catalogue differs.</strong> Android ships
+      nineteen, iPhone twelve. The exercises themselves are identical on both.
+    </li>
+  </ul>
+
+  <h3>I can't see my heart rate<span class="plateforme">iPhone + Apple Watch</span></h3>
   <p>
     Measurement only starts if you switch it on <strong>in the app on your
     watch</strong>: open RepLift on your wrist, go to Settings and turn on
@@ -97,7 +166,7 @@
     appear under Progress.
   </p>
 
-  <h3>The workout doesn't reach my watch</h3>
+  <h3>The workout doesn't reach my watch<span class="plateforme">iPhone + Apple Watch</span></h3>
   <p>
     Both devices must be paired and in range. Open RepLift on the iPhone once;
     the day's workout is sent then. Editing a programme updates the watch,
@@ -105,17 +174,54 @@
     current version on purpose, so nothing changes while you are recording.
   </p>
 
+  <h3>I don't get the reminders<span class="plateforme">Android</span></h3>
+  <p>
+    Two system settings can hold them back, and the app can override neither.
+  </p>
+  <ul>
+    <li>
+      <strong>The notification permission</strong>, asked for since
+      Android&nbsp;13. If you declined it, go to Settings → Apps → RepLift →
+      Notifications to grant it. RepLift says so in its own settings when this
+      is the case.
+    </li>
+    <li>
+      <strong>Battery optimisation.</strong> The morning reminder is a
+      scheduled job; some manufacturers delay it, sometimes by hours, while the
+      app is “optimised”. The same Settings → Apps → RepLift screen lets you
+      set it to “Unrestricted”.
+    </li>
+  </ul>
+
   <h3>How do I get my data out?</h3>
   <p>
     Settings, then Data: export everything as JSON and your set history as CSV.
     The JSON can be imported back into RepLift; the CSV opens in any
     spreadsheet.
   </p>
+  <p>
+    Each version writes and reads its own JSON. The CSV columns, however, are
+    not the same across platforms: if a spreadsheet or a script of yours reads
+    these files, stay on one platform.
+  </p>
 
   <h3>Do I need an account?</h3>
   <p>
     No. RepLift has no account, no server and no connection. Everything lives on
     your devices. Deleting the app deletes the data, so export first.
+  </p>
+
+  <h3>Kilograms or pounds?</h3>
+  <p>
+    Either. The choice is in Settings and applies everywhere — including the
+    watch, on iPhone.
+  </p>
+
+  <h3>Which languages?</h3>
+  <p>
+    French and English. The app follows your phone's language. Exercise
+    pages — cues and common mistakes — are still written in French in the
+    Android version.
   </p>
 </section>
 
